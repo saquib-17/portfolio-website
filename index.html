@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saquib Ansari | Frontend Developer</title>
+
+  <!-- Google Fonts: Inter & Poppins for a premium typographic scale -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- Header / Navbar -->
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="#home" class="nav__logo">SAQUIB<span>.</span></a>
+      
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#experience" class="nav__link">Journey</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <!-- Close button for mobile menu -->
+        <i class="fa-solid fa-xmark nav__close" id="nav-close"></i>
+      </div>
+
+      <div class="nav__buttons">
+        <!-- Dark Theme Toggle -->
+        <i class="fa-regular fa-moon change-theme" id="theme-button"></i>
+        <!-- Hamburger Menu for Mobile -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    
+    <!-- HERO SECTION -->
+    <section class="hero section" id="home">
+      <div class="hero__container container grid">
+        <div class="hero__data">
+          <span class="hero__greeting">Hello, I'm</span>
+          <h1 class="hero__name">Mohammed Saquib Ansari</h1>
+          <h2 class="hero__role">A Passionate <span class="typed-text"></span></h2>
+          <p class="hero__description">
+            I craft modern, responsive, and visually stunning digital experiences. Turning brilliant ideas into high-performance web applications with clean code and elegant design.
+          </p>
+          <div class="hero__buttons">
+            <a href="#contact" class="btn btn--primary">
+              Hire Me <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#" class="btn btn--outline">
+              Download CV <i class="fa-regular fa-file-pdf"></i>
+            </a>
+          </div>
+          <div class="hero__socials">
+            <a href="#" class="hero__social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="hero__social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="hero__social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="hero__social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="hero__image-wrapper">
+          <div class="hero__blob">
+            <img src="./assets/images/mypic.jpg" alt="Saquib Ansari" class="hero__img" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about section" id="about">
+      <h2 class="section__title">About Me</h2>
+      <span class="section__subtitle">My Introduction</span>
+
+      <div class="about__container container grid">
+        <div class="about__img-wrapper">
+          <img src="./assets/images/mypic.jpg" alt="About Saquib" class="about__img" loading="lazy">
+        </div>
+
+        <div class="about__data">
+          <p class="about__description">
+            I’m a BCA 3rd-year student and a dedicated frontend developer. I thrive on translating complex concepts into intuitive, realistic, and high-quality user interfaces. Currently, I'm strengthening my foundation in Java & DSA while mastering HTML, CSS, and modern JavaScript. 
+            <br><br>
+            I am also actively exploring Node.js, Express, and MongoDB to expand my skill set into full-stack development. My mission is to crack placements, engineer impactful solutions, and continuously grow in the ever-evolving tech landscape.
+          </p>
+
+          <div class="about__info">
+            <div class="about__box">
+              <i class="fa-solid fa-award about__icon"></i>
+              <h3 class="about__title">Experience</h3>
+              <span class="about__subtitle">1+ Years Coding</span>
+            </div>
+            <div class="about__box">
+              <i class="fa-solid fa-briefcase about__icon"></i>
+              <h3 class="about__title">Completed</h3>
+              <span class="about__subtitle">10+ Projects</span>
+            </div>
+            <div class="about__box">
+              <i class="fa-solid fa-headset about__icon"></i>
+              <h3 class="about__title">Support</h3>
+              <span class="about__subtitle">Online 24/7</span>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn--primary">
+            Download Resume <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills section" id="skills">
+      <h2 class="section__title">Tech Stack</h2>
+      <span class="section__subtitle">My Technical Expertise</span>
+
+      <div class="skills__container container grid">
+        <!-- Frontend Skills -->
+        <div class="skills__content">
+          <h3 class="skills__title">Frontend Development</h3>
+          <div class="skills__box group">
+            <div class="skills__data">
+              <i class="fa-brands fa-html5 skills__icon html-color"></i>
+              <div>
+                <h3 class="skills__name">HTML5</h3>
+                <span class="skills__level">Advanced</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <i class="fa-brands fa-css3-alt skills__icon css-color"></i>
+              <div>
+                <h3 class="skills__name">CSS3 / Tailwind</h3>
+                <span class="skills__level">Advanced</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <i class="fa-brands fa-js skills__icon js-color"></i>
+              <div>
+                <h3 class="skills__name">JavaScript</h3>
+                <span class="skills__level">Intermediate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend & Tools -->
+        <div class="skills__content">
+          <h3 class="skills__title">Backend & Tools</h3>
+          <div class="skills__box group">
+            <div class="skills__data">
+              <i class="fa-brands fa-java skills__icon java-color"></i>
+              <div>
+                <h3 class="skills__name">Java</h3>
+                <span class="skills__level">Intermediate</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <i class="fa-brands fa-node-js skills__icon node-color"></i>
+              <div>
+                <h3 class="skills__name">Node.js & Express</h3>
+                <span class="skills__level">Basic</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <i class="fa-solid fa-database skills__icon mongo-color"></i>
+              <div>
+                <h3 class="skills__name">MongoDB</h3>
+                <span class="skills__level">Basic</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <i class="fa-brands fa-github skills__icon git-color"></i>
+              <div>
+                <h3 class="skills__name">Git & GitHub</h3>
+                <span class="skills__level">Intermediate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / JOURNEY SECTION (NEW) -->
+    <section class="experience section" id="experience">
+      <h2 class="section__title">My Journey</h2>
+      <span class="section__subtitle">Education & Experience</span>
+
+      <div class="experience__container container">
+        <div class="experience__tabs">
+          <div class="experience__button experience__active" data-target="#education">
+            <i class="fa-solid fa-graduation-cap"></i> Education
+          </div>
+          <div class="experience__button" data-target="#work">
+            <i class="fa-solid fa-briefcase"></i> Experience
+          </div>
+        </div>
+
+        <div class="experience__sections">
+          <!-- Education Content -->
+          <div class="experience__content experience__active" data-content id="education">
+            <!-- Timeline Item 1 -->
+            <div class="experience__data">
+              <div>
+                <h3 class="experience__title">Bachelor of Computer Applications (BCA)</h3>
+                <span class="experience__subtitle">University Name - 3rd Year</span>
+                <div class="experience__calendar">
+                  <i class="fa-regular fa-calendar"></i> 2022 - Present
+                </div>
+              </div>
+              <div>
+                <span class="experience__rounder"></span>
+                <span class="experience__line"></span>
+              </div>
+            </div>
+            <!-- Timeline Item 2 -->
+            <div class="experience__data">
+              <div></div>
+              <div>
+                <span class="experience__rounder"></span>
+              </div>
+              <div>
+                <h3 class="experience__title">Higher Secondary (12th)</h3>
+                <span class="experience__subtitle">Pre-University College</span>
+                <div class="experience__calendar">
+                  <i class="fa-regular fa-calendar"></i> 2020 - 2022
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Work Content -->
+          <div class="experience__content" data-content id="work">
+            <div class="experience__data">
+               <div>
+                <h3 class="experience__title">Frontend Web Developer Projects</h3>
+                <span class="experience__subtitle">Self-Taught / Personal</span>
+                <div class="experience__calendar">
+                  <i class="fa-regular fa-calendar"></i> ongoing
+                </div>
+              </div>
+              <div>
+                <span class="experience__rounder"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects section" id="projects">
+      <h2 class="section__title">Portfolio</h2>
+      <span class="section__subtitle">Most Recent Work</span>
+
+      <div class="project__filters container">
+        <span class="project__item active-project" data-filter="all">All</span>
+        <span class="project__item" data-filter=".frontend">Frontend</span>
+        <span class="project__item" data-filter=".backend">Backend APIs</span>
+        <span class="project__item" data-filter=".fullstack">Fullstack</span>
+      </div>
+
+      <div class="projects__container container grid">
+        <!-- Project 1 -->
+        <article class="project__card frontend">
+          <div class="project__img-wrapper">
+            <img src="./assets/images/Amazon Replica.png" alt="Amazon Replica" class="project__img" loading="lazy">
+            <div class="project__overlay">
+              <a href="#" class="project__link" aria-label="View Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="project__link" aria-label="View Code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project__content">
+            <div class="project__tags">
+              <span class="project__tag">HTML</span>
+              <span class="project__tag">CSS</span>
+            </div>
+            <h3 class="project__title">Amazon Replica</h3>
+            <p class="project__description">A robust frontend clone of Amazon featuring complex grid layouts, product listings, and highly responsive mobile-first design.</p>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project__card frontend">
+          <div class="project__img-wrapper">
+            <img src="./assets/images/netflix replica.png" alt="Netflix Replica" class="project__img" loading="lazy">
+            <div class="project__overlay">
+              <a href="#" class="project__link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="project__link"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project__content">
+            <div class="project__tags">
+              <span class="project__tag">HTML</span>
+              <span class="project__tag">CSS</span>
+            </div>
+            <h3 class="project__title">Netflix Replica</h3>
+            <p class="project__description">An immersive Netflix-inspired landing page with sleek hover effects, dark theme accents, and dynamic content carousels.</p>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project__card frontend">
+          <div class="project__img-wrapper">
+            <img src="./assets/images/flavaro.png" alt="Food Website" class="project__img" loading="lazy">
+            <div class="project__overlay">
+              <a href="#" class="project__link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="project__link"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project__content">
+             <div class="project__tags">
+              <span class="project__tag">HTML</span>
+              <span class="project__tag">CSS</span>
+              <span class="project__tag">JS</span>
+            </div>
+            <h3 class="project__title">Flavaro Food Website</h3>
+            <p class="project__description">A vibrant, interactive restaurant web app featuring digital menus, smooth navigation, and scroll animations.</p>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project__card frontend js-heavy">
+          <div class="project__img-wrapper">
+            <img src="./assets/images/todo-list.png" alt="To-Do List" class="project__img" loading="lazy">
+            <div class="project__overlay">
+              <a href="#" class="project__link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="project__link"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project__content">
+             <div class="project__tags">
+              <span class="project__tag">HTML</span>
+              <span class="project__tag">CSS</span>
+              <span class="project__tag">JS</span>
+            </div>
+            <h3 class="project__title">Dynamic To-Do List</h3>
+            <p class="project__description">A functional task manager leveraging Vanilla JS for DOM manipulation, local storage persistence, and task filtering.</p>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project__card fullstack js-heavy">
+           <div class="project__img-wrapper">
+            <img src="./assets/images/wheather api.png" alt="Weather App" class="project__img" loading="lazy">
+            <div class="project__overlay">
+              <a href="#" class="project__link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="project__link"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project__content">
+             <div class="project__tags">
+              <span class="project__tag">JS</span>
+              <span class="project__tag">API</span>
+            </div>
+            <h3 class="project__title">Live Weather App</h3>
+            <p class="project__description">A real-time weather forecasting tool that integrates third-party RESTful APIs, handling asynchronous fetch requests.</p>
+          </div>
+        </article>
+      </div>
+      
+      <!-- Backend Projects Summary Block -->
+      <div class="backend-summary container">
+         <div class="backend-summary__content">
+            <h3 class="backend-summary__title">Backend API Portfolio</h3>
+            <p class="backend-summary__desc">In addition to frontend development, I have engineered robust REST APIs including:</p>
+            <div class="backend-summary__tags">
+              <span>To-Do API</span>
+              <span>Weather API</span>
+              <span>Notes API</span>
+              <span>Blog API</span>
+              <span>JWT Auth API</span>
+            </div>
+         </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact section" id="contact">
+      <h2 class="section__title">Get in Touch</h2>
+      <span class="section__subtitle">Contact Me</span>
+
+      <div class="contact__container container grid">
+        <div class="contact__info">
+          <h3 class="contact__title">Talk to me</h3>
+
+          <div class="contact__cards">
+            <div class="contact__card">
+              <i class="fa-regular fa-envelope contact__card-icon"></i>
+              <h3 class="contact__card-title">Email</h3>
+              <span class="contact__card-data">Saquiba070@gmail.com</span>
+              <a href="mailto:Saquiba070@gmail.com" class="contact__button">
+                Write me <i class="fa-solid fa-arrow-right contact__button-icon"></i>
+              </a>
+            </div>
+
+            <div class="contact__card">
+              <i class="fa-solid fa-phone contact__card-icon"></i>
+              <h3 class="contact__card-title">Phone</h3>
+              <span class="contact__card-data">+91 80732-97735</span>
+              <a href="tel:+918073297735" class="contact__button">
+                Call me <i class="fa-solid fa-arrow-right contact__button-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__content">
+          <h3 class="contact__title">Write your project</h3>
+
+          <form action="#" class="contact__form">
+            <div class="contact__form-div group">
+              <label for="name" class="contact__form-tag">Names</label>
+              <input type="text" id="name" placeholder="Insert your name" class="contact__form-input" required>
+            </div>
+
+            <div class="contact__form-div group">
+              <label for="email" class="contact__form-tag">Mail</label>
+              <input type="email" id="email" placeholder="Insert your email" class="contact__form-input" required>
+            </div>
+
+            <div class="contact__form-div contact__form-area group">
+              <label for="message" class="contact__form-tag">Project</label>
+              <textarea id="message" cols="30" rows="10" placeholder="Write your project details" class="contact__form-input" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary">
+              Send Message <i class="fa-regular fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__container container">
+      <h1 class="footer__title">Saquib Ansari</h1>
+
+      <ul class="footer__list">
+        <li><a href="#about" class="footer__link">About</a></li>
+        <li><a href="#projects" class="footer__link">Projects</a></li>
+        <li><a href="#skills" class="footer__link">Skills</a></li>
+      </ul>
+
+      <ul class="footer__social">
+        <a href="#" class="footer__social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="footer__social-link"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="footer__social-link"><i class="fa-brands fa-instagram"></i></a>
+      </ul>
+
+      <span class="footer__copy">
+        &#169; 2026 Mohammed Saquib Ansari. All rigths reserved.
+      </span>
+    </div>
+  </footer>
+
+  <!-- SCROLL UP BUTTON -->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="fa-solid fa-arrow-up scrollup__icon"></i>
+  </a>
+
+  <!-- TYPED JS (Optional CDN for typing effect) -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  
+  <!-- SCROLL REVEAL (Optional CDN for scroll animations) -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- MAIN JS -->
+  <script src="./js/script.js"></script>
+</body>
+</html>
